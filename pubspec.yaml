@@ -1,0 +1,35 @@
+name: flutter_application_1
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+  # كود تغيير الأيقونة (لازم يكون هنا تحت dev_dependencies)
+  flutter_launcher_icons: ^0.13.1
+
+# كود تغيير الأيقونة (لازم يكون هنا بره flutter:)
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  # ملفات الصور (لازم تكون تحت flutter: بمسافتين)
+  assets:
+    - assets/images/
