@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'background_painter.dart'; // استدعاء ملف الخلفية
+import 'background_painter.dart'; 
 
 class PlacesScreen extends StatelessWidget {
   final String areaName;
@@ -8,26 +8,30 @@ class PlacesScreen extends StatelessWidget {
   
   final Map<String, List<Map<String, String>>> mockData = const {
     'رستم-صيدليات': [
-      {'name': 'صيدلية الشفاء', 'address': 'شارع رستم الرئيسي', 'phone': '01012345678'},
-      {'name': 'صيدلية النور', 'address': 'نص رستم جنب البنك', 'phone': '01198765432'},
-      {'name': 'صيدلية 19006', 'address': 'أخر شارع رستم', 'phone': '01554321678'},
+      {'name': 'ناهد محمد (رجب)', 'address': 'محطة رستم', 'phone': '01002070033'},
+      {'name': 'رجب محمد', 'address': 'ملف رستم', 'phone': '01002070033'},
+      {'name': 'فاطمه', 'address': 'شارع ورشة البلاط', 'phone': '01007732150'},
+      {'name': 'ماجده', 'address': 'شارع سيد البابلي', 'phone': '01226330171'},
+   
     ],
     'رستم-كافيهات': [
-      {'name': 'كافيه نوت', 'address': 'أول رستم', 'phone': '01000000000'},
-      {'name': 'كافيه الورد', 'address': 'آخر رستم', 'phone': '01222222222'},
+      {'name': 'كافيه تامر', 'address': 'شارع ورشة البلاط', 'phone': '01020105578'},
+      {'name': 'كافيه الاهلويه', 'address': 'محطة رستم', 'phone': '01198776899'},
+
     ],
     'رستم-مطاعم': [
-      {'name': 'مطعم الخيام', 'address': 'شارع رستم', 'phone': '01111111111'},
+      {'name': 'أبو علي الكبابجي', 'address': 'محطة رستم', 'phone': '01010447410'},
+      {'name': 'بيتزا وفطائر افندينا', 'address': 'محطة رستم', 'phone': '01015405540'},
+      {'name': 'جمبري الشرقاوي', 'address': 'محطة رستم', 'phone': '01149393621'},
     ],
     'شارع فارس-صيدليات': [
-      {'name': 'صيدلية الفارس', 'address': 'بداية شارع فارس', 'phone': '01555555555'},
+      
     ],
     'شارع فارس-مطاعم': [
-      {'name': 'مطعم السلطان', 'address': 'وسط شارع فارس', 'phone': '01666666666'},
-      {'name': 'كشري أبو طارق', 'address': 'نهاية شارع فارس', 'phone': '01777777777'},
+      
     ],
     'السوق-مطاعم': [
-      {'name': 'مطعم الشرق', 'address': 'داخل السوق', 'phone': '01888888888'},
+
     ],
   };
 
@@ -41,7 +45,6 @@ class PlacesScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // طبقة الخلفية
           Positioned.fill(
             child: Container(
               decoration: const BoxDecoration(
@@ -55,7 +58,6 @@ class PlacesScreen extends StatelessWidget {
             ),
           ),
           
-          // طبقة الواجهة
           SafeArea(
             child: Column(
               children: [

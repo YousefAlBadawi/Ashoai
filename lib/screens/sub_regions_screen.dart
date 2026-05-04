@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'services_screen.dart';
-import 'background_painter.dart'; // استدعاء ملف الخلفية
+import 'background_painter.dart';
 
 class SubRegionsScreen extends StatelessWidget {
   final String regionName;
@@ -14,7 +14,6 @@ class SubRegionsScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // طبقة الخلفية
           Positioned.fill(
             child: Container(
               decoration: const BoxDecoration(
@@ -28,7 +27,6 @@ class SubRegionsScreen extends StatelessWidget {
             ),
           ),
           
-          // طبقة الواجهة
           SafeArea(
             child: Column(
               children: [

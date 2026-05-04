@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'regions_screen.dart';
-import 'background_painter.dart'; // استدعينا ملف الرسمة
+import 'background_painter.dart'; 
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,12 +9,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // الـ Stack هو اللي بيرص الخلفية تحت، والواجهة فوق
       body: Stack(
         children: [
-          // ==========================================
-          // 1. طبقة الخلفية (كرات الضوء البنفسجي)
-          // ==========================================
           Positioned.fill(
             child: Container(
               decoration: const BoxDecoration(
@@ -25,21 +21,16 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               child: CustomPaint(
-                painter: GlowyBackgroundPainter(), // الرسمة بتشتغل هنا
+                painter: GlowyBackgroundPainter(),
               ),
             ),
           ),
-          
-          // ==========================================
-          // 2. طبقة واجهة المستخدم (اللي فوق الخلفية)
-          // ==========================================
-          // شلت كلمة const منSafeArea عشان فيه صورة بتتغير
-          SafeArea(
+
+                    SafeArea(
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // اللوجو
                   Image.asset(
                     'assets/images/logo.png',
                     width: 150,
@@ -67,7 +58,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 80),
                   
-                  // زرار انضم بالزجاج
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: BackdropFilter(
@@ -110,7 +100,6 @@ class HomeScreen extends StatelessWidget {
                   
                   const SizedBox(height: 60),
                   
-                  // إشعار قريباً بالزجاج
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: BackdropFilter(

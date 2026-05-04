@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class GlowyBackgroundPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    // كرة ضوء في أعلى الشمال
     final paint1 = Paint()
       ..shader = RadialGradient(
         colors: [
@@ -21,7 +20,6 @@ class GlowyBackgroundPainter extends CustomPainter {
       paint1,
     );
 
-    // كرة ضوء في أسفل اليمين
     final paint2 = Paint()
       ..shader = RadialGradient(
         colors: [
@@ -39,7 +37,6 @@ class GlowyBackgroundPainter extends CustomPainter {
       paint2,
     );
 
-    // كرة ضوء صغيرة في النص على اليسار بلون أفتح شوية
     final paint3 = Paint()
       ..shader = RadialGradient(
         colors: [

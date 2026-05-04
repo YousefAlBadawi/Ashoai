@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'places_screen.dart';
-import 'background_painter.dart'; // استدعاء ملف الخلفية
+import 'background_painter.dart';
 
 class ServicesScreen extends StatelessWidget {
   final String areaName;
@@ -18,7 +18,6 @@ class ServicesScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // طبقة الخلفية
           Positioned.fill(
             child: Container(
               decoration: const BoxDecoration(
@@ -32,7 +31,6 @@ class ServicesScreen extends StatelessWidget {
             ),
           ),
           
-          // طبقة الواجهة
           SafeArea(
             child: Column(
               children: [
