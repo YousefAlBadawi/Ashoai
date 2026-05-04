@@ -1,5 +1,4 @@
 # Ashoai
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/YousefAlBadawi/Ashoai)
 
 Ashoai (عشوائي) is a Flutter-based mobile application designed as a local directory for the city of Basous, Egypt. It helps users discover and locate various services such as cafes, restaurants, and pharmacies within different neighborhoods. The app features a unique dark, purple-themed UI with glowing visual effects.
 
